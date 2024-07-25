@@ -1,0 +1,95 @@
+.carouselContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.carouselItem {
+  background-color: black;
+  opacity: 1.8;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.carouselItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.carouselItem:hover img {
+  opacity: 0.7;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: start;
+}
+
+.overlay p {
+  padding: 15px;
+}
+
+.carouselItem:hover .overlay {
+  opacity: 1;
+}
+
+.carouselItem.hovered {
+  transform: scale(1.1);
+  z-index: 100000000000000;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  .carouselItem {
+    width: 250px; /* Ajusta a largura do item do carrossel */
+    height: 250px; /* Ajusta a altura do item do carrossel */
+  }
+}
+
+@media (max-width: 550px) {
+  .carouselItem {
+    width: 200px; /* Ajusta a largura do item do carrossel */
+    height: 200px; /* Ajusta a altura do item do carrossel */
+  }
+}
+
+@media (max-width: 480px) {
+  .carouselItem {
+    width: 180px; /* Ajusta a largura do item do carrossel */
+    height: 180px; /* Ajusta a altura do item do carrossel */
+  }
+
+  .overlay p {
+    font-size: 14px; /* Ajusta o tamanho do texto na sobreposição */
+  }
+}
+@media (max-width: 380px) {
+  .carouselItem {
+    width: 120px; /* Ajusta a largura do item do carrossel */
+    height: 120px; /* Ajusta a altura do item do carrossel */
+  }
+
+  .overlay p {
+    font-size: 14px; /* Ajusta o tamanho do texto na sobreposição */
+  }
+}
+

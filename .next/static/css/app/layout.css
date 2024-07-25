@@ -1,0 +1,288 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/componentes/css.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Main:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css');
+
+.css_body__znsm3 {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #1a506b, #151d27);
+}
+
+/*//////////// abaixo está o css do footer////////////////*/
+
+.css_footer__XDxDf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #020612;
+  color: white;
+  width: auto;
+  height: 150px;
+  padding: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.css_footer__XDxDf p {
+  margin: 0; 
+}
+
+.css_socialList__l0pGt {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+.css_socialList__l0pGt a {
+  font-size: 150%;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .css_footer__XDxDf {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .css_footer__XDxDf p {
+    margin: 10px 0;
+  }
+
+  .css_socialList__l0pGt {
+    justify-content: center;
+  }
+}
+
+/*//////////// acima está o css do footer////////////////*/
+
+/* css.module.css */
+
+.css_notFound__E5BLB {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #9fa2ff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.css_notFound__E5BLB h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+.css_notFound__E5BLB img {
+  margin-bottom: 20px;
+}
+
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/componentes/header.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+/* header.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arial&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css');
+
+.header_cabecalho__XKHGW {
+  z-index: 100000;
+  color: white;
+  background-color: #151d27;
+  padding: 10px;
+  height: auto;
+  position: relative;
+}
+
+.header_nav__IZ4la {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_menuIcon__NglEr {
+  cursor: pointer;
+  display: flex;
+}
+
+.header_logoTitle__IpTiO {
+  font-size: 40px;
+  font-family: 'Marcellus', serif;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header_info__u_4BQ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.header_fale_conosco__N_WV7 {
+  margin: 5px;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2em;
+}
+
+.header_icons__cXGhe {
+  display: flex;
+  align-items: center;
+}
+
+.header_icons__cXGhe a {
+  position: relative;
+  margin-left: 20px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.header_icons__cXGhe a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1.5px;
+  background: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.header_icons__cXGhe a:hover {
+  color: white;
+}
+
+.header_icons__cXGhe a:hover::after {
+  width: 100%;
+}
+
+.header_categories__j9kb3 {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 200px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.header_categories__j9kb3 a {
+  display: block;
+  padding: 10px;
+  color: #000;
+  text-decoration: none;
+}
+
+.header_categories__j9kb3 a:hover {
+  background-color: #2d5280;
+  color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 900px) {
+  .header_nav__IZ4la {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header_logoTitle__IpTiO {
+    position: absolute;
+    left: 20%;
+    transform: none;
+    font-size: 30px;
+  }
+
+  .header_info__u_4BQ {
+    flex-direction: column;
+  }
+
+  .header_fale_conosco__N_WV7 {
+    font-size: 1em;
+  }
+
+}
+
+@media (max-width: 650px) { 
+  .header_logoTitle__IpTiO {
+    position: absolute;
+    left: 10%;
+    transform: none;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header_nav__IZ4la {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header_logoTitle__IpTiO {
+    position: absolute;
+    font-size: 25px;
+  }
+
+  .header_info__u_4BQ {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header_fale_conosco__N_WV7 {
+    font-size: 0.8em;
+  }
+
+  .header_icons__cXGhe {
+    flex-direction: row;
+    margin-top: 5px;
+  }
+
+  .header_icons__cXGhe a {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header_nav__IZ4la {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+ 
+
+  .header_logoTitle__IpTiO {
+    position: static;
+    transform: none;
+    font-size: 25px;
+  }
+
+  .header_info__u_4BQ {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .header_fale_conosco__N_WV7 {
+    font-size: 1em;
+  }
+
+  .header_icons__cXGhe {
+    flex-direction: row;
+    margin-top: 10px;
+  }
+
+  .header_icons__cXGhe a {
+    margin: 5px;
+  }
+}

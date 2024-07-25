@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Main:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css');
+
+.body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #1a506b, #151d27);
+}
+
+/*//////////// abaixo está o css do footer////////////////*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #020612;
+  color: white;
+  width: auto;
+  height: 150px;
+  padding: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0; 
+}
+
+.socialList {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+.socialList a {
+  font-size: 150%;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .footer p {
+    margin: 10px 0;
+  }
+
+  .socialList {
+    justify-content: center;
+  }
+}
+
+/*//////////// acima está o css do footer////////////////*/
+
+/* css.module.css */
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #9fa2ff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.notFound h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+.notFound img {
+  margin-bottom: 20px;
+}
+

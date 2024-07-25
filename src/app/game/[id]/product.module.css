@@ -1,0 +1,184 @@
+.productContainer {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+.productImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 700px; /* Garante que a imagem não exceda a largura da tela */
+}
+
+.productMainImage {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 400px;
+  max-height: 400px;
+  object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
+}
+
+.mediaThumbnailsContainer {
+  width: 100%;
+  max-width: 700px;
+  overflow-x: auto; /* Habilitar rolagem horizontal */
+  white-space: nowrap; /* Impedir quebras de linha */
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Estilização da barra de rolagem horizontal */
+.mediaThumbnailsContainer::-webkit-scrollbar {
+  height: 8px;
+}
+
+.mediaThumbnailsContainer::-webkit-scrollbar-track {
+  background: #555; /* Cor do fundo da barra de rolagem */
+  border-radius: 10px;
+}
+
+.mediaThumbnailsContainer::-webkit-scrollbar-thumb {
+  background-color: #aaa; /* Cor da barra de rolagem */
+  border-radius: 10px;
+  border: 2px solid #555; /* Cor do contorno da barra de rolagem */
+}
+
+.mediaThumbnails {
+  display: inline-flex; /* Usar inline-flex para exibir thumbnails em linha */
+  gap: 10px;
+}
+
+.productThumbnail {
+  cursor: pointer;
+  transition: border 0.3s;
+  border: 2px solid transparent;
+  width: 180px;
+  height: 120px;
+}
+
+.productThumbnail.active {
+  border: 3px solid white;
+}
+
+.productDetails {
+  background-color: rgba(13, 23, 34, 0.9);
+  text-align: left;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.productTitle {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.productCategory,
+.productDescription,
+.productPrice,
+.productRating,
+.productCount,
+.productPlatform {
+  margin-bottom: 10px;
+}
+
+.productPrice {
+  font-size: 2em;
+}
+
+.productPlatform {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.productCategory strong,
+.productDescription strong,
+.productPrice strong,
+.productRating strong,
+.productCount strong,
+.productPlatform strong {
+  font-weight: bold;
+}
+
+.product-hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.imgB {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.5), transparent 10%);
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  .productMainImage {
+    width: 80%;
+    max-height: 300px;
+  }
+
+  .productThumbnail {
+    width: 120px;
+    height: 80px;
+  }
+
+  .productDetails {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .productTitle {
+    font-size: 1.5em;
+  }
+
+  .productPrice {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .productMainImage {
+    max-height: 200px;
+  }
+
+  .productThumbnail {
+    width: 100px;
+    height: 60px;
+  }
+
+  .productTitle {
+    font-size: 1.2em;
+  }
+
+  .productPrice {
+    font-size: 1.2em;
+  }
+
+  .productDetails {
+    padding: 10px;
+  }
+}

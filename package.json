@@ -1,5 +1,5 @@
 {
-  "name": "info5a",
+  "name": "shop",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.4"
+    "react-dom": "^18"
   }
 }

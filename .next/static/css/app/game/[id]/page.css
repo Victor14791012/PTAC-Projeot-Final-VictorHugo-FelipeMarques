@@ -1,0 +1,203 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/game/[id]/product.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.product_productContainer__uAuwe {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+.product_productImage__6bRJa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 700px; /* Garante que a imagem não exceda a largura da tela */
+}
+
+.product_productMainImage__ku7nL {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 400px;
+  max-height: 400px;
+  object-fit: contain; /* Garante que a imagem se ajuste sem cortar */
+}
+
+.product_mediaThumbnailsContainer__HXmvX {
+  width: 100%;
+  max-width: 700px;
+  overflow-x: auto; /* Habilitar rolagem horizontal */
+  white-space: nowrap; /* Impedir quebras de linha */
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Estilização da barra de rolagem horizontal */
+.product_mediaThumbnailsContainer__HXmvX::-webkit-scrollbar {
+  height: 8px;
+}
+
+.product_mediaThumbnailsContainer__HXmvX::-webkit-scrollbar-track {
+  background: #555; /* Cor do fundo da barra de rolagem */
+  border-radius: 10px;
+}
+
+.product_mediaThumbnailsContainer__HXmvX::-webkit-scrollbar-thumb {
+  background-color: #aaa; /* Cor da barra de rolagem */
+  border-radius: 10px;
+  border: 2px solid #555; /* Cor do contorno da barra de rolagem */
+}
+
+.product_mediaThumbnails__knD2Y {
+  display: inline-flex; /* Usar inline-flex para exibir thumbnails em linha */
+  gap: 10px;
+}
+
+.product_productThumbnail__2r0SL {
+  cursor: pointer;
+  transition: border 0.3s;
+  border: 2px solid transparent;
+  width: 180px;
+  height: 120px;
+}
+
+.product_productThumbnail__2r0SL.product_active__C83Bs {
+  border: 3px solid white;
+}
+
+.product_productDetails__Xt_3U {
+  background-color: rgba(13, 23, 34, 0.9);
+  text-align: left;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.product_productTitle__KzxDg {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.product_productCategory__DJ3W_,
+.product_productDescription___fxX4,
+.product_productPrice__f0XfL,
+.product_productRating__XzqyI,
+.product_productCount__DKjPT,
+.product_productPlatform__NmqUD {
+  margin-bottom: 10px;
+}
+
+.product_productPrice__f0XfL {
+  font-size: 2em;
+}
+
+.product_productPlatform__NmqUD {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product_productCategory__DJ3W_ strong,
+.product_productDescription___fxX4 strong,
+.product_productPrice__f0XfL strong,
+.product_productRating__XzqyI strong,
+.product_productCount__DKjPT strong,
+.product_productPlatform__NmqUD strong {
+  font-weight: bold;
+}
+
+.product_product-hero__UXN_W {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product_imgB__t1t7Y {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.5), transparent 10%);
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  .product_productMainImage__ku7nL {
+    width: 80%;
+    max-height: 300px;
+  }
+
+  .product_productThumbnail__2r0SL {
+    width: 120px;
+    height: 80px;
+  }
+
+  .product_productDetails__Xt_3U {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .product_productTitle__KzxDg {
+    font-size: 1.5em;
+  }
+
+  .product_productPrice__f0XfL {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .product_productMainImage__ku7nL {
+    max-height: 200px;
+  }
+
+  .product_productThumbnail__2r0SL {
+    width: 100px;
+    height: 60px;
+  }
+
+  .product_productTitle__KzxDg {
+    font-size: 1.2em;
+  }
+
+  .product_productPrice__f0XfL {
+    font-size: 1.2em;
+  }
+
+  .product_productDetails__Xt_3U {
+    padding: 10px;
+  }
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/componentes/ErrorGetData.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+/* ErrorGetData.module.css */
+
+.ErrorGetData_errorContainer__VCoOZ {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin: 20px;
+  }
+  
