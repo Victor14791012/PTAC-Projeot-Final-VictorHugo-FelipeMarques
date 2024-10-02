@@ -55,13 +55,7 @@ Repositório do projeto no GitHub: [PTAC Projeto Final - Victor Hugo & Felipe Ma
 
 ## Simulação de API
 
-A API é simulada localmente e fornece dados para a lista de jogos indies. Ela retorna informações dos jogos como:
-
-- **ID**
-- **Título**
-- **Descrição**
-- **Gênero**
-- **Data de Lançamento**
+A API é simulada localmente e fornece dados para a lista de jogos indies. Ela retorna informações dos jogos 
 
 Essa API é acessada nas páginas que precisam dos dados dos jogos, permitindo o carregamento dinâmico do conteúdo com base no jogo selecionado.
 
