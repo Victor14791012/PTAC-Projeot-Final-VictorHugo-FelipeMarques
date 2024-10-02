@@ -1,3 +1,4 @@
+
 # Projeto Web de Jogos Indies
 
 Este projeto foi desenvolvido como parte do trabalho final para a disciplina **PROGRAMAÇÃO E TECNOLOGIAS PARA APLICAÇÕES CLIENTE 3 (PTAC3)**, por **Victor Hugo Lourenço de Carvalho** e **Felipe Marques**. O projeto é uma mini aplicação web que exibe jogos indies, inspirado no design das plataformas Steam e Nuvem. A aplicação utiliza **Next.js**, **JavaScript (JS)** e **CSS**, e inclui uma API simulada, criada localmente na pasta do projeto.
@@ -30,19 +31,44 @@ Repositório do projeto no GitHub: [PTAC Projeto Final - Victor Hugo & Felipe Ma
 1. Clone o repositório:
    ```bash
    git clone https://github.com/Victor14791012/PTAC-Projeot-Final-VictorHugo-FelipeMarques.git
+   ```
 
-Abra a Pasta: PTAC-Projeot-Final-VictorHugo-FelipeMarques
+2. Navegue até a pasta do projeto:
+   ```bash
+   cd PTAC-Projeot-Final-VictorHugo-FelipeMarques
+   ```
 
-Instale as dependências: npm i
+3. Instale as dependências:
+   ```bash
+   npm i
+   ```
 
-Execute o servidor de desenvolvimento: npm run dev
+4. Execute o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
 
-Abra o navegador e vá para: http://localhost:3000
+5. Abra o navegador e vá para:
+   ```
+   http://localhost:3000
+   ```
 
-Simulação de API
-A API é simulada localmente e fornece dados para a lista de jogos indies. Ela retorna informações dos jogos:
+## Simulação de API
+
+A API é simulada localmente e fornece dados para a lista de jogos indies. Ela retorna informações dos jogos como:
+
+- **ID**
+- **Título**
+- **Descrição**
+- **Gênero**
+- **Data de Lançamento**
 
 Essa API é acessada nas páginas que precisam dos dados dos jogos, permitindo o carregamento dinâmico do conteúdo com base no jogo selecionado.
 
-Inspiração
-O design deste projeto foi inspirado em plataformas de jogos populares como Steam e Nuvem.
+## Inspiração
+
+O design deste projeto foi inspirado em plataformas de jogos populares como **Steam** e **Nuvem**, com foco na simplicidade e na usabilidade.
+
+---
+
+Projeto desenvolvido por **Victor Hugo Lourenço de Carvalho** e **Felipe Marques**.
