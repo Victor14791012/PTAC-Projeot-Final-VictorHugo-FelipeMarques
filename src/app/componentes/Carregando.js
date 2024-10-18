@@ -1,4 +1,4 @@
-import Image from 'next/image'; // Importe o componente Image do Next.js
+import Image from 'next/image'; 
 
 export default function Carregando() {
     return (

@@ -10,12 +10,12 @@ export default function Carousel() {
   useEffect(() => {
     const fetchGames = async () => {
       try {
-        const response = await fetch('/api'); // Certifique-se de que a URL da API está correta
+        const response = await fetch('/api'); 
         const data = await response.json();
         setGames(data.slice(0, 4).map(game => ({
           ...game,
           descricao: truncateDescription(game.descricao),
-        }))); // Limita a exibição a 6 itens
+        }))); 
       } catch (error) {
         console.error('Failed to fetch games:', error);
       }
@@ -25,7 +25,7 @@ export default function Carousel() {
   }, []);
 
   const truncateDescription = (description) => {
-    const maxLength = 100; // Defina o comprimento máximo desejado
+    const maxLength = 100; 
     if (description.length > maxLength) {
       return description.substring(0, maxLength) + '...';
     } else {

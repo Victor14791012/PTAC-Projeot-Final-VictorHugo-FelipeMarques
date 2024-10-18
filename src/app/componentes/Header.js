@@ -1,7 +1,7 @@
-"use client"; // Adiciona essa linha para indicar que o componente é do lado do cliente
+"use client"; // essa linha serva para indicar que o componente é do lado do cliente
 
 import Link from "next/link";
-import styles from "./header.module.css"; // Certifique-se de que o caminho para o arquivo CSS está correto
+import styles from "./header.module.css"; 
 import { useState } from "react";
 
 export default function Menu() {

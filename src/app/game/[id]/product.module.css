@@ -7,7 +7,7 @@
   border-radius: 10px;
   color: white;
   width: 100%;
-  box-sizing: border-box; /* Inclui padding e border na largura total */
+  box-sizing: border-box; 
 }
 
 .productImage {
@@ -17,7 +17,7 @@
   margin-bottom: 20px;
   position: relative;
   width: 100%;
-  max-width: 700px; /* Garante que a imagem não exceda a largura da tela */
+  max-width: 700px; 
 }
 
 .productMainImage {
@@ -134,7 +134,7 @@
   pointer-events: none;
 }
 
-/* Media queries para responsividade */
+/* Resposividade */
 @media (max-width: 768px) {
   .productMainImage {
     width: 80%;
