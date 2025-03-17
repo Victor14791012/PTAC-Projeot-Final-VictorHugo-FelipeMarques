@@ -21,7 +21,6 @@ export default function Menu() {
 
       <div className={styles.logoTitle}>
       <h1 className={styles.logoText} style={{  textDecoration: "none", color: "white" }}>
-  //<Link href="http://localhost:3000" style={{ textDecoration: "none", color: "white" }}>Indie-Store</Link>
   <Link href="https://indie-store.vercel.app" style={{ textDecoration: "none", color: "white" }}>Indie-Store</Link>
 </h1>
 
