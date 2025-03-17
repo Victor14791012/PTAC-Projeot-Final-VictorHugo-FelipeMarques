@@ -18,7 +18,8 @@ export default function Main() {
   useEffect(() => {
     const getProduct = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api");
+        //const response = await fetch("http://localhost:3000/api");
+        const response = await fetch("https://indie-store.vercel.app/api");
         const data = await response.json();
         setListProducts(data);
         setListComplete(data);
